@@ -1,11 +1,36 @@
-STEP 1: Create an conda environment -> conda create -n mlops-LR python=3.7 -y
+### How to create a conda environment
 
-STEP 2: Activate the conda environment -> conda activate mlops-LR
+```
+conda create -n mlops-LR python=3.7 -y
+```
 
-STEP 3: Install the required libraries/packages -> pip install -r requirements.txt
+### Activate the conda environment
 
-STEP 4: To check the ML pipelines are working -> dvc repro
+```
+conda activate mlops-LR
+```
 
-STEP 5: To check the metrics -> dvc metrics show
+### Install the required libraries/packages
 
-STEP 6: To invoke the service -> python app.py
+```
+pip install -r requirements.txt
+```
+
+### To check the ML pipelines are working
+
+```
+dvc repro
+```
+
+### To check the metrics
+
+```
+dvc metrics show
+```
+
+### To invoke the service
+
+```
+python app.py
+```
+#### NOTE : Data is being stored at Google Drive Through DVC.
